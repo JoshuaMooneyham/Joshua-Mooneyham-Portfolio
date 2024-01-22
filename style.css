@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=Bayon");
 
 * {
     padding: 0;
@@ -60,6 +61,30 @@
 }
 
 .photo-background {
-    height: 100px;
-    background-image: url("images/pexels-alexandra-karnasopoulos-3680319.jpg");
+    display: flex;
+    width: 100%;
+    height: 750px;
+    background-image: url("images/pexels-luck-galindo-544268.jpg");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
+.photo-text {
+    font-family: Bayon;
+    letter-spacing: 10px;
+    font-size: 4em;
+    color: white;
+}
+
+/* .photo-header {
+    display: flex;
+    color: white;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+} */
