@@ -6,7 +6,7 @@
 * {
     padding: 0;
     margin: 0;
-    border: red dashed 1px;
+    /* border: red dashed 1px; */
     box-sizing: border-box;
 }
 
@@ -89,15 +89,12 @@ html {
     letter-spacing: 10px;
     font-size: 4em;
     color: white;
+    text-shadow: 4px 4px 1px rgba(255, 255, 255, 0.403);
 }
 
-.skills-container {
-    display: flex;
-    flex-direction: column;
+.about-container {
     background-color: white;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+    padding-top: 1em;
 }
 
 .section-header {
@@ -106,6 +103,7 @@ html {
     text-align: center;
     font-size: 2em;
     margin-top: 1.5em;
+    color: rgb(255, 149, 0);
 }
 
 .underline {
@@ -116,7 +114,17 @@ html {
     justify-self: center;
     border-radius: 5px;
     margin: 3em auto;
+    
+}
 
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3em;
 }
 
 .skillimage img {
@@ -141,7 +149,6 @@ html {
 .back-end {
     width: 100%;
     margin: 0 0 2% 0;
-    background-color: rgb(174, 27, 27);
 }
 
 .front-misc {
@@ -152,21 +159,31 @@ html {
 }
 
 .front-end {
-    background-color: antiquewhite;
     height: inherit;
     width: 57%;
 }
 
 .misc {
-    background-color: aqua;
     height: inherit;
-    width: 37%
+    width: 37%;
+
+}
+
+.skillback {
+    border-radius: 50px;
+    background-color: rgb(38, 105, 105);
+    padding: 20px;
 }
 
 .frontback-header {
     color: white;
     font-family: Nunito;
     text-align: center;
+    margin-bottom: 3%;
+}
+
+.back-end .frontback-header {
+    margin-bottom: 1%;
 }
 
 .frontback-skills {
@@ -183,4 +200,19 @@ html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-size: 1em;
+}
+
+.skilltext {
+    padding-top: 1em;
+    color: rgb(220, 220, 220);
+}
+
+#vs {
+    display: flex;
+    width: 125%;
+}
+
+.vs {
+    display: flex;
+    align-items: center;
 }

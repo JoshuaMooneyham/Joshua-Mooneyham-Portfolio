@@ -10,10 +10,16 @@
       <div class="nav">
         <ul class="nav-container">
           <div class="nav-btn">
-            <li><button type="button" class="btn">About</button></li>
+            <li>
+              <button type="button" class="btn">About</button>
+            </li>
           </div>
           <div class="nav-btn">
-            <li><button type="button" class="btn">Skills</button></li>
+            <li>
+              <a href="#skilljump"
+                ><button type="button" class="btn">Skills</button></a
+              >
+            </li>
           </div>
           <div class="nav-btn">
             <li><button type="button" class="btn">Projects</button></li>
@@ -35,12 +41,23 @@
       </div>
     </div>
 
-    <div class="skills-container">
+    <div class="about-container">
+      <div class="section-header"><h1>About</h1></div>
+      <div class="underline"></div>
+      <div class="about-content">
+        <p>
+          My name is Joshua Mooneyham. I am an aspiring backend developer and
+          Current apprentice at the Base Camp Coding Academy Graduate Institute
+        </p>
+      </div>
+    </div>
+
+    <div class="skills-container" id="skilljump">
       <div class="section-header"><h1>Skills</h1></div>
       <div class="underline"></div>
 
       <div class="skill-content">
-        <div class="back-end">
+        <div class="back-end skillback">
           <div class="frontback-header">
             <h1>Backend Development</h1>
           </div>
@@ -77,7 +94,7 @@
         </div>
 
         <div class="front-misc">
-          <div class="front-end">
+          <div class="front-end skillback">
             <div class="frontback-header"><h1>Frontend Development</h1></div>
             <div class="frontback-skills">
               <div class="skill">
@@ -97,14 +114,14 @@
             </div>
           </div>
 
-          <div class="misc">
+          <div class="misc skillback">
             <div class="frontback-header"><h1>Application Skills</h1></div>
             <div class="frontback-skills">
-              <div class="skill">
+              <div class="skill vs">
                 <div class="skillimage">
                   <img src="images/vs.png" />
                 </div>
-                <div class="skilltext"><p>Visual Studio</p></div>
+                <div class="skilltext" id="vs"><p>Visual Studio</p></div>
               </div>
               <div class="skill">
                 <div class="skillimage">
@@ -117,5 +134,7 @@
         </div>
       </div>
     </div>
+
+    <div class="projects-container"></div>
   </body>
 </html>
