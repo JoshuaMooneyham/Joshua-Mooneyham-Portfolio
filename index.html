@@ -11,24 +11,38 @@
         <ul class="nav-container">
           <div class="nav-btn">
             <li>
-              <button type="button" class="btn">About</button>
-            </li>
-          </div>
-          <div class="nav-btn">
-            <li>
-              <a href="#skilljump"
-                ><button type="button" class="btn">Skills</button></a
+              <a href="#aboutjump">
+                <button type="button" class="btn">About</button></a
               >
             </li>
           </div>
           <div class="nav-btn">
-            <li><button type="button" class="btn">Projects</button></li>
+            <li>
+              <a href="#skilljump">
+                <button type="button" class="btn">Skills</button></a
+              >
+            </li>
           </div>
           <div class="nav-btn">
-            <li><button type="button" class="btn">Contact</button></li>
+            <li>
+              <a href="#projectjump"
+                ><button type="button" class="btn">Projects</button></a
+              >
+            </li>
           </div>
           <div class="nav-btn">
-            <li><button type="button" class="btn">Resume</button></li>
+            <li>
+              <a href="#contactjump"
+                ><button type="button" class="btn">Contact</button></a
+              >
+            </li>
+          </div>
+          <div class="nav-btn">
+            <li>
+              <a href="Resume.pdf" target="_blank"
+                ><button type="button" class="btn">Resume</button></a
+              >
+            </li>
           </div>
         </ul>
       </div>
@@ -41,13 +55,18 @@
       </div>
     </div>
 
-    <div class="about-container">
+    <div class="about-container" id="aboutjump">
       <div class="section-header"><h1>About</h1></div>
       <div class="underline"></div>
       <div class="about-content">
         <p>
           My name is Joshua Mooneyham. I am an aspiring backend developer and
-          Current apprentice at the Base Camp Coding Academy Graduate Institute
+          Current apprentice at the
+          <a href="https://basecampcodingacademy.org/" target="_blank"
+            >Base Camp Coding Academy Graduate Institute</a
+          >
+          (BCCA GI), where I am learning all the skills I need to start a career
+          in software development.
         </p>
       </div>
     </div>
@@ -55,6 +74,11 @@
     <div class="skills-container" id="skilljump">
       <div class="section-header"><h1>Skills</h1></div>
       <div class="underline"></div>
+      <div class="section-header sub-header">
+        <h2>
+          These are the skills I am learning during my time at the BCCA GI
+        </h2>
+      </div>
 
       <div class="skill-content">
         <div class="back-end skillback">
@@ -86,7 +110,7 @@
               </div>
               <div class="skilltext"><p>SQL</p></div>
             </div>
-            <div class="skill">
+            <div class="skill spring">
               <div class="skillimage"><img src="images/spring-3.svg" /></div>
               <div class="skilltext"><p>Spring</p></div>
             </div>
@@ -125,7 +149,7 @@
               </div>
               <div class="skill">
                 <div class="skillimage">
-                  <img src="images/Git_icon.svg.png" />
+                  <img src="images/git.svg" />
                 </div>
                 <div class="skilltext"><p>Git</p></div>
               </div>
