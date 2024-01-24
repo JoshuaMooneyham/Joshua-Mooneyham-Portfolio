@@ -108,6 +108,7 @@ html {
     font-family: Nunito;
     text-align: center;
     font-weight: bold;
+    color: rgb(103, 103, 103);
 }
 
 .section-header {
@@ -134,7 +135,9 @@ html {
     margin-top: -.5em;
     margin-bottom: 1.5em;
     font-size: 1.3em;
-    color: rgb(206, 6, 6);
+    /* color: rgb(206, 6, 6); */
+    color: rgb(103, 103, 103);
+    width: 90%;
  }
 
 .skills-container {
