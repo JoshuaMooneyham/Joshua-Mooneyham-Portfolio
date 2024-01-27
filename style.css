@@ -15,6 +15,7 @@ html {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar {
@@ -72,7 +73,8 @@ html::-webkit-scrollbar {
 
 .btn:hover {
     background-color: rgba(164, 164, 164, 0.322);
-    color: rgb(206, 6, 6);
+    /* color: rgb(255, 115, 0); */
+    color: rgb(236, 132, 9);
     cursor: pointer;
     border-radius: 10px;
 }
@@ -84,7 +86,6 @@ html::-webkit-scrollbar {
     width: 100%;
     /* height: 750px; */
     height: 100vh; /* 100% of view height */
-    /* background-image: url("images/pexels-alexandra-karnasopoulos-3680319.jpg"); */
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
     background-size: cover;
@@ -102,23 +103,34 @@ html::-webkit-scrollbar {
     text-shadow: 4px 4px 2px rgba(255, 255, 255, 0.403);
 }
 
-/* Section headers */
+/* Universal Section Elements */
+
+.main-section-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    align-items: center;
+}
+
+.general-container {
+    width: 90%;
+}
 
 .section-header {
-    font-family: Nunito;
-    /* font-family: Oswald; */
-    /* font-family: monospace; */
+    font-family: Oswald;
     font-weight: bolder;
     text-align: center;
     font-size: 2em;
     margin: 2em 0;
-    color: rgb(255, 149, 0);
+    color: rgb(206, 6, 6);
+    letter-spacing: 2px;
 }
 
 .underline {
     display: flex;
-    height: 8px;
-    background-color: black;
+    height: 2px;
+    background-color: rgb(189, 189, 189);
     width: 75%;
     justify-self: center;
     border-radius: 5px;
@@ -130,31 +142,20 @@ html::-webkit-scrollbar {
     margin-top: -.5em;
     margin-bottom: 1.5em;
     font-size: 1.3em;
-    /* color: rgb(206, 6, 6); */
     color: rgb(103, 103, 103);
-    width: 90%;
  }
 
 /* About Me */
-
-.about-container {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    padding-top: 1em;
-    width: 100%;
-    align-items: center;
-}
 
 .about-content {
     display: flex;
     width: 90%;
     font-size: 1.5em;
-    font-family: Nunito;
-    /* font-family: monospace; */
+    font-family: Oswald;
     text-align: center;
     font-weight: bold;
     color: rgb(103, 103, 103);
+    letter-spacing: 1px;
 }
 
 /* Skills */
@@ -202,28 +203,26 @@ html::-webkit-scrollbar {
 
 .front-end {
     height: inherit;
-    width: 57%;
+    width: 100%;
 }
 
 .misc {
     height: inherit;
-    width: 39%;
+    width: 100%;
 
 }
 
 .skillback {
     border-radius: 50px;
-    /* background-color: rgb(38, 105, 105); */
-    /* background-color: rgb(103, 14, 14); */
-    /* border: solid rgb(185, 1, 1) 5px; */
+    background-color: rgb(239, 239, 239);
     padding: 20px;
 }
 
-.frontback-header {
-    /* color: white; */
-    color: black;
-    font-family: Nunito;
+.skill-header {
+    color: rgb(236, 132, 9);
+    font-family: Oswald;
     text-align: center;
+    margin-bottom: 2em;
 }
 
 .frontback-skills {
@@ -236,194 +235,184 @@ html::-webkit-scrollbar {
     flex-direction: column;
     width: 200px;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: Oswald;
+    letter-spacing: 1px;
     font-weight: bold;
-    font-size: 1em;
-    /* background-color: rgb(192, 213, 206);
-    border-radius: 20px;
-    padding: 10px 0; */
+    font-size: 1.1em;
+    color: #676767;
 }
 
-.skilltext {
-    color: rgb(95, 95, 95);
-    /* color: rgb(220, 220, 220); */
-    /* color: rgb(49, 49, 49); */
-}
-
-/* Skills red border white bg */
-
-/* .skills-container {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
+.backend-container {
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 3em;
 }
 
-.skillimage img {
-    height: 100px;
-    margin: 1em;
+.front-container {
+    width: 57%;
 }
 
-.skillimage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.tools-container {
+    width: 39%;
 }
 
-.skill-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+/* -------Projects------- */
+
+/* -={Vertical Cards}=- */
+
+/* .project-content {
     width: 90%;
-}
-
-.back-end {
-    width: 100%;
-    margin: 0 0 2% 0;
-}
-
-.front-misc {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 2% 0 0 0;
-}
-
-.front-end {
-    height: inherit;
-    width: 57%;
-}
-
-.misc {
-    height: inherit;
-    width: 39%;
-
-}
-
-.skillback {
-    border-radius: 50px;
-    border: solid rgb(185, 1, 1) 5px;
-    padding: 20px;
-}
-
-.frontback-header {
-    color: black;
-    font-family: Nunito;
-    text-align: center;
-}
-
-.frontback-skills {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.skill {
+.project-card {
     display: flex;
     flex-direction: column;
-    width: 200px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 1em;
+    align-items: center;
+    background-color: rgb(239, 239, 239);
+    padding: 3em;
+    min-width: 200px;
+    max-width: 400px;
+    border-radius: 50px;
+    height: inherit;
 }
 
-.skilltext {
-    color: rgb(95, 95, 95);
+.project-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.project-image img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-title {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin: 10%;
+}
+
+.project-description {
+    font-family: verdana;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.project-buttons{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.project-buttons button {
+    width: 35%;
+    height: 50px;
+    border: none;
+    background-color: rgb(206, 6, 6);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.project-button button:hover {
+    background-color: rgb(255, 109, 109);
 } */
 
-/* Skills gray icons */
-
-.skills-container {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 3em;
-}
-
-.skillimage img {
-    height: 100px;
-    margin: 1em;
-}
-
-.skillimage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.skill-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+.project-content {
     width: 90%;
-}
-
-.back-end {
-    width: 100%;
-    margin: 0 0 2% 0;
-}
-
-.front-misc {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 2% 0 0 0;
-}
-
-.front-end {
-    height: inherit;
-    width: 57%;
-}
-
-.misc {
-    height: inherit;
-    width: 39%;
-
-}
-
-.skillback {
-    border-radius: 50px;
-    background-color: rgb(38, 105, 105);
-    background-color: rgb(28, 27, 54);
-    /* border: solid rgb(185, 1, 1) 5px; */
-    padding: 20px;
-}
-
-.frontback-header {
-    /* color: white; */
-    color: rgb(227, 227, 227);
-    font-family: Nunito;
-    text-align: center;
-}
-
-.frontback-skills {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.skill {
     display: flex;
     flex-direction: column;
-    width: 200px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 1em;
-    /* background-color: rgb(192, 213, 206);
-    border-radius: 20px;
-    padding: 10px 0; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.skilltext {
-    color: rgb(155, 155, 155);
-    /* color: rgb(220, 220, 220); */
-    /* color: rgb(49, 49, 49); */
+.project-card {
+    display: flex;
+    background-color: rgb(239, 239, 239);
+    /* background-color: blueviolet; */
+    border-radius: 40px;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+
+.project-card-content {
+    margin: 1.7em;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    text-align: center;
+    color: #676767;
+    font-family: Oswald;
+}
+
+.project-image {
+    height: 200px;
+}
+
+.project-image img {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.project-description {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0 1em;
+}
+
+
+
+.project-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+}
+
+.project-buttons button {
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: rgb(206, 6, 6);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.project-buttons button:hover {
+    background-color: rgb(255, 109, 109);
+    cursor: pointer;
+}
+
+.project-buttons img {
+    width: 30px
+}
+
+/* .project-buttons img:hover {
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.718);
+} */
+
+.replit img {
+    width: 20px
+}
+
+.project-language {
+    font-size: 1.2em;
 }
