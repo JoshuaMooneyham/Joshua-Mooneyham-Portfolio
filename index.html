@@ -8,10 +8,15 @@
   </head>
 
   <body>
+    <!-- ========={ Header / Navigation }========= -->
+
     <header class="header-container">
       <div class="nav">
         <ul class="nav-container">
           <div class="nav-btn" id="collapse"><img src="images/menu.png" /></div>
+
+          <!-- ========={ Navigation Buttons }========= -->
+
           <div class="nav-btn">
             <li>
               <a href="#aboutjump">
@@ -19,6 +24,7 @@
               >
             </li>
           </div>
+
           <div class="nav-btn">
             <li>
               <a href="#skilljump">
@@ -26,6 +32,7 @@
               >
             </li>
           </div>
+
           <div class="nav-btn">
             <li>
               <a href="#projectjump"
@@ -33,6 +40,7 @@
               >
             </li>
           </div>
+
           <div class="nav-btn">
             <li>
               <a href="#contactjump"
@@ -40,6 +48,7 @@
               >
             </li>
           </div>
+
           <div class="nav-btn">
             <li>
               <a href="Resume.pdf" target="_blank"
@@ -51,6 +60,8 @@
       </div>
     </header>
 
+    <!-- ========={ Landing Page }========= -->
+
     <div class="photo-background">
       <div class="photo-text">
         <h1 class="photo-header">JOSHUA MOONEYHAM</h1>
@@ -58,8 +69,11 @@
       </div>
     </div>
 
+    <!-- ========={ About Me Section }========= -->
+
     <div class="about-container main-section-container" id="aboutjump">
       <div class="section-header"><h1>About</h1></div>
+
       <div class="about-content">
         <p>
           My name is Joshua Mooneyham. I am an aspiring backend developer and
@@ -73,46 +87,66 @@
       </div>
     </div>
 
+    <!-- ========={ Skills Section }========= -->
+
     <div class="skills-container main-section-container" id="skilljump">
       <div class="general-container">
         <div class="section-header"><h1>Skills</h1></div>
+
         <div class="section-header sub-header skl">
           <h2>
             These are the skills I am learning during my time at the BCCA GI
           </h2>
+
           <div class="underline"></div>
         </div>
       </div>
 
       <div class="skill-content">
+        <!-- =========={ Backend }========= -->
+
         <div class="backend-container">
           <div class="skill-header"><h1>Backend Development</h1></div>
           <div class="back-end skillback">
             <div class="frontback-skills">
+              <!-- =={ Python }==-->
+
               <div class="skill">
                 <div class="skillimage">
                   <img src="images/Python-flat.png" />
                 </div>
                 <div class="skilltext"><p>Python</p></div>
               </div>
+
+              <!-- =={ Java }==-->
+
               <div class="skill">
                 <div class="skillimage">
                   <img src="images/Java_programming_language_logo.svg.png" />
                 </div>
                 <div class="skilltext"><p>Java</p></div>
               </div>
+
+              <!-- =={ Django }==-->
+
               <div class="skill">
                 <div class="skillimage">
                   <img src="images/django-icon-1606x2048-lwmw1z73.png" />
                 </div>
                 <div class="skilltext"><p>Django</p></div>
               </div>
+
+              <!-- =={ SQL }==-->
+
               <div class="skill">
                 <div class="skillimage">
                   <img src="images/Sql_data_base_with_logo.png" />
                 </div>
                 <div class="skilltext"><p>SQL</p></div>
               </div>
+
+              <!-- =={ Spring }==-->
+
               <div class="skill spring">
                 <div class="skillimage">
                   <img src="images/spring-3.svg" />
@@ -123,23 +157,36 @@
           </div>
         </div>
 
+        <!-- =========={ Frontend and Tools }========= -->
+
         <div class="front-misc">
           <div class="front-container">
             <div class="skill-header"><h1>Frontend Development</h1></div>
+
+            <!-- =========={ Frontend }========= -->
+
             <div class="front-end skillback">
               <div class="frontback-skills">
+                <!-- =={ HTML }==-->
+
                 <div class="skill">
                   <div class="skillimage">
                     <img src="images/html.png" />
                   </div>
                   <div class="skilltext"><p>HTML</p></div>
                 </div>
+
+                <!-- =={ CSS }==-->
+
                 <div class="skill">
                   <div class="skillimage">
                     <img src="images/css.png" />
                   </div>
                   <div class="skilltext"><p>CSS</p></div>
                 </div>
+
+                <!-- =={ JS }==-->
+
                 <div class="skill">
                   <div class="skillimage">
                     <img src="images/javascript.png" />
@@ -150,16 +197,23 @@
             </div>
           </div>
 
+          <!-- =========={ Tools }========= -->
+
           <div class="tools-container">
             <div class="skill-header"><h1>Tools</h1></div>
             <div class="misc skillback">
               <div class="frontback-skills">
-                <div class="skill vs">
+                <!-- =={ VS }==-->
+
+                <div class="skill">
                   <div class="skillimage">
                     <img src="images/vs.png" />
                   </div>
-                  <div class="skilltext" id="vs"><p>Visual Studio</p></div>
+                  <div class="skilltext"><p>Visual Studio</p></div>
                 </div>
+
+                <!-- =={ Git }==-->
+
                 <div class="skill">
                   <div class="skillimage">
                     <img src="images/Git_icon.svg.png" />
@@ -171,36 +225,115 @@
           </div>
         </div>
       </div>
+
+      <!-- ====={ Secondary Skills Section For Responsiveness }===== -->
+
+      <div class="galaxy-skills">
+        <div class="skill">
+          <div class="skillimage">
+            <img src="images/Python-flat.png" />
+          </div>
+          <div class="skilltext"><p>Python</p></div>
+        </div>
+        <div class="skill">
+          <div class="skillimage">
+            <img src="images/Java_programming_language_logo.svg.png" />
+          </div>
+          <div class="skilltext"><p>Java</p></div>
+        </div>
+        <div class="skill">
+          <div class="skillimage">
+            <img src="images/django-icon-1606x2048-lwmw1z73.png" />
+          </div>
+          <div class="skilltext"><p>Django</p></div>
+        </div>
+        <div class="skill">
+          <div class="skillimage">
+            <img src="images/Sql_data_base_with_logo.png" />
+          </div>
+          <div class="skilltext"><p>SQL</p></div>
+        </div>
+        <div class="skill spring">
+          <div class="skillimage">
+            <img src="images/spring-3.svg" />
+          </div>
+          <div class="skilltext"><p>Spring</p></div>
+        </div>
+        <div class="skill">
+          <div class="skillimage">
+            <img src="images/html.png" />
+          </div>
+          <div class="skilltext"><p>HTML</p></div>
+        </div>
+        <div class="skill">
+          <div class="skillimage">
+            <img src="images/css.png" />
+          </div>
+          <div class="skilltext"><p>CSS</p></div>
+        </div>
+        <div class="skill">
+          <div class="skillimage">
+            <img src="images/javascript.png" />
+          </div>
+          <div class="skilltext"><p>JavaScript</p></div>
+        </div>
+        <div class="skill">
+          <div class="skillimage">
+            <img src="images/vs.png" />
+          </div>
+          <div class="skilltext"><p>Visual Studio</p></div>
+        </div>
+        <div class="skill">
+          <div class="skillimage">
+            <img src="images/Git_icon.svg.png" />
+          </div>
+          <div class="skilltext"><p>Git</p></div>
+        </div>
+      </div>
     </div>
+
+    <!-- ========={ Projects Section }========= -->
 
     <div class="projects-container main-section-container" id="projectjump">
       <div class="section-header"><h1>Projects</h1></div>
+
+      <!-- ========={ Projects Cards }=========-->
+
       <div class="project-content">
+        <!-- =={ Kingdom of Shadows }== -->
+
         <div class="project-card">
           <div class="project-card-content">
             <div class="project-image">
               <img src="images/Kingdom of Shadows.jpg" />
             </div>
+
             <div class="project-text">
               <div class="project-title">the Kingdom of Shadows</div>
+
               <div class="project-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
                 voluptates officia asperiores repellendus. Quidem, dolores!
               </div>
+
               <div class="project-language">Demonstrates Python</div>
             </div>
+
             <div class="project-buttons">
               <a
                 href="https://github.com/JoshuaMooneyham/Unit-1-Project"
                 target="_blank"
-                ><button type="button" class="project-button">
+              >
+                <button type="button" class="project-button">
                   <img src="images/github white.png" />
                 </button>
               </a>
+
               <a
                 href="https://replit.com/@JoshuaMooneyha1/Unit-1-Project"
                 target="_blank"
-                ><button type="button" class="project-button replit">
+              >
+                <button type="button" class="project-button replit">
                   <img src="images/replitwhite (1).png" />
                 </button>
               </a>
@@ -208,29 +341,37 @@
           </div>
         </div>
 
+        <!-- =={ Solkvagen }== -->
+
         <div class="project-card">
           <div class="project-card-content">
             <div class="project-image"><img src="images/squarecar1.png" /></div>
+
             <div class="project-text">
               <div class="project-title">Solkvwagen Car Dealership</div>
+
               <div class="project-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
                 voluptates officia asperiores repellendus. Quidem, dolores!
               </div>
+
               <div class="project-language">Demonstrates Python</div>
             </div>
+
             <div class="project-buttons">
               <a
                 href="https://github.com/JoshuaMooneyham/Unit-2-Project"
                 target="_blank"
-                ><button type="button" class="project-button">
+              >
+                <button type="button" class="project-button">
                   <img src="images/github white.png" />
                 </button>
               </a>
               <a
                 href="https://replit.com/@bclarkson/Unit-02-Project"
                 target="_blank"
-                ><button type="button" class="project-button replit">
+              >
+                <button type="button" class="project-button replit">
                   <img src="images/replitwhite (1).png" />
                 </button>
               </a>
@@ -238,24 +379,31 @@
           </div>
         </div>
 
+        <!-- =={ GOAT }== -->
+
         <div class="project-card">
           <div class="project-card-content">
             <div class="project-image">
               <img src="images/goat.png" />
             </div>
+
             <div class="project-text">
               <div class="project-title">Greatest of All Time</div>
+
               <div class="project-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
                 voluptates officia asperiores repellendus. Quidem, dolores!
               </div>
+
               <div class="project-language">Demonstrates HTML and CSS</div>
             </div>
+
             <div class="project-buttons">
               <a
                 href="https://github.com/JoshuaMooneyham/GOAT-Website"
                 target="_blank"
-                ><button type="button" class="project-button">
+              >
+                <button type="button" class="project-button">
                   <img src="images/github white.png" />
                 </button>
               </a>
@@ -269,24 +417,30 @@
           </div>
         </div>
 
+        <!-- =={ Charity }== -->
+
         <div class="project-card">
           <div class="project-card-content">
             <div class="project-image">
               <img src="images/pf-45b96c65--Pantsblogintropic_1200x.png" />
             </div>
+
             <div class="project-text">
               <div class="project-title">Pants For All</div>
+
               <div class="project-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
                 voluptates officia asperiores repellendus. Quidem, dolores!
               </div>
               <div class="project-language">Demonstrates HTML and CSS</div>
             </div>
+
             <div class="project-buttons">
               <a
                 href="https://github.com/JoshuaMooneyham/PantsforAll"
                 target="_blank"
-                ><button type="button" class="project-button">
+              >
+                <button type="button" class="project-button">
                   <img src="images/github white.png" />
                 </button>
               </a>

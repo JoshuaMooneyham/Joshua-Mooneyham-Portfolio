@@ -371,23 +371,35 @@ html::-webkit-scrollbar {
     }
 
     .skill-header {
-        font-size: .8em;
+        font-size: .7em;
     }
 
     .skill {
         width: 75px;
         scale: .75;
-        font-size: .8em;
+        font-size: .7em;
+    }
+
+    .skilltext {
+        margin-top: 10px;
+    }
+
+    .photo-background {
+        background-image: url("images/pexels-alexandra-karnasopoulos-3680319.jpg");
     }
 
     .photo-header {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     .photo-subheader {
         font-size: .75em;
     }
     
+    html {
+        background: white;
+    }
+
     .nav-btn {
         display: none;
     }
@@ -415,6 +427,83 @@ html::-webkit-scrollbar {
 
     .header-container {
         z-index: 1;
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+    .photo-header{
+        font-size: .65em;
+    }
+
+    .photo-subheader {
+        font-size: .45em;
+    }
+    
+    .skill-content {
+        display: none;
+    }
+
+    .galaxy-skills {
+        background: rgb(239, 239, 239);
+        padding: 15px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+        border-radius: 30px;
+    }
+
+    .skill {
+        scale: .85;
+    }
+
+    .project-buttons button{
+        scale: .8;
+    }
+
+}
+
+@media only screen and (min-width: 350px) {
+    .galaxy-skills {
+        display: none;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .photo-header {
+        font-size: 1em;
+    }
+    .photo-subheader {
+        font-size: .6em;
+    }
+
+    .header-container {
+        display: flex;
+        position: fixed;
+        height: 70px;
+        width: 70px;
+        border-radius: 0 0 20px 0;
+
+    }
+    
+    .nav-btn {
+        display: none;
+    }
+
+    #collapse {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    #collapse img {
+        width: 50px;
+    }
+
+    .about-content {
+        width: 80%;
     }
 
 }
