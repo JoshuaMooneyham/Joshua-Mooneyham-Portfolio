@@ -21,7 +21,7 @@ html::-webkit-scrollbar {
     display: none;
 }
 
-/* -----{Navigation bar / header}----- */
+/* ====={ Navigation bar / header }===== */
 
 .header-container {
     display: flex;
@@ -81,7 +81,7 @@ html::-webkit-scrollbar {
     display: none;
 }
 
-/* -----{Landing photo section}------ */
+/* ====={ Landing photo section }===== */
 
 .photo-background {
     display: flex;
@@ -104,7 +104,7 @@ html::-webkit-scrollbar {
     text-shadow: 4px 4px 2px rgba(255, 255, 255, 0.403);
 }
 
-/* -----{Universal Section Elements}----- */
+/* ====={ Universal Section Elements }===== */
 
 .main-section-container {
     display: flex;
@@ -146,7 +146,7 @@ html::-webkit-scrollbar {
     color: rgb(103, 103, 103);
  }
 
-/* -----{About Me}----- */
+/* ====={ About Me }===== */
 
 .about-content {
     display: flex;
@@ -159,7 +159,7 @@ html::-webkit-scrollbar {
     letter-spacing: 1px;
 }
 
-/* -----{Skills}----- */
+/* ====={ Skills }===== */
 
 .skills-container {
     display: flex;
@@ -255,7 +255,7 @@ html::-webkit-scrollbar {
     width: 39%;
 }
 
-/* -----{Projects}----- */
+/* ====={ Projects }===== */
 
 .project-content {
     width: 90%;
@@ -308,8 +308,6 @@ html::-webkit-scrollbar {
     padding: 0 1em;
 }
 
-
-
 .project-buttons{
     display: flex;
     flex-direction: column;
@@ -346,7 +344,60 @@ html::-webkit-scrollbar {
     font-size: 1.2em;
 }
 
+/* ====={ Contact }===== */
 
+.contact-content {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+.contact-icon img {
+    width: 150px;
+}
+
+.contact-icon img:hover {
+    opacity: 30%;
+}
+
+.contact-text {
+    color: rgb(236, 132, 9);
+    font-family: Oswald;
+    font-size: 1.3em;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 3em;
+}
+
+.resume button {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(206, 6, 6);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    margin-bottom: 3em;
+}
+
+.resume button:hover {
+    background-color: rgb(255, 109, 109);
+    cursor: pointer;
+}
+
+
+/* ====={ Responsiveness }===== */
+
+
+/* =={ iPhone }== */
 
 @media only screen and (max-width: 650px) {
     .project-card-content {
@@ -355,9 +406,18 @@ html::-webkit-scrollbar {
     }
 
     .project-buttons {
+        margin-top: 1em;
         flex-direction: row;
         justify-content: space-evenly;
         width: 100%;
+    }
+
+    .project-title {
+        margin-top: .5em;
+    }
+
+    .project-description {
+        margin: 1em;
     }
 
     .skillimage img{
@@ -429,7 +489,25 @@ html::-webkit-scrollbar {
         z-index: 1;
     }
 
+    .contact-icon {
+        scale: .75;
+    }
+
 }
+
+@media only screen and (max-width: 500px) {
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-icon {
+        scale: 1.2;
+    }
+
+}
+
+/* =={ Galaxy }== */
 
 @media only screen and (max-width: 350px) {
     .photo-header{
@@ -464,11 +542,15 @@ html::-webkit-scrollbar {
 
 }
 
+/* =={ Hide galaxy specifics }== */
+
 @media only screen and (min-width: 350px) {
     .galaxy-skills {
         display: none;
     }
 }
+
+/* =={ Sideways view }== */
 
 @media only screen and (max-height: 600px) {
     .photo-header {
@@ -486,7 +568,7 @@ html::-webkit-scrollbar {
         border-radius: 0 0 20px 0;
 
     }
-    
+
     .nav-btn {
         display: none;
     }
@@ -505,5 +587,12 @@ html::-webkit-scrollbar {
     .about-content {
         width: 80%;
     }
+}
 
+/* Resize Icon for small phone side orientation */
+
+@media only screen and (max-height: 380px) {
+    .skill {
+        scale: .8;
+    }
 }
