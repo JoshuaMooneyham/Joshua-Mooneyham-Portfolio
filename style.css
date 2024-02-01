@@ -443,7 +443,8 @@ html::-webkit-scrollbar {
     color: white;
     font-family: Oswald;
     font-size: 3em;
-    background-color: rgba(0, 0, 0, 0.878);
+    /* background-color: rgba(0, 0, 0, 0.878); */
+    background-color: rgba(31, 31, 31);
     position: absolute;
     justify-content: center;
 }
