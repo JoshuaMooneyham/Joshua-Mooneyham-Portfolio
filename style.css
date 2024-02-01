@@ -80,15 +80,19 @@ html::-webkit-scrollbar {
 
 /* ====={ Checkbox }===== */
 
-.collapse {
+.secondary-header {
     display: none;
 }
 
-.menuimg {
+.collapse { /* Hides the dropdown when screen isn't small */
+    display: none;
+}
+
+.menuimg { /* resizes manu icon */
     width: 50px;
 }
 
-#checkbox-toggle {
+#checkbox-toggle { /* Hides the physical checkbox */
     display: none;  
 }
 
@@ -141,38 +145,6 @@ html::-webkit-scrollbar {
     text-shadow: 4px 4px 2px rgba(255, 255, 255, 0.403);
 }
 
-/* .landing-contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.landing-contact img {
-    width: 50px;
-}
-
-.landing-contact-icons {
-    display: flex;
-    width: 50%;
-    justify-content: space-around;
-    margin-bottom: 30px;
-}
-
-.landing-contact-email {
-    display: flex;
-    color: white;
-    font-family: Oswald;
-    letter-spacing: 1px;
-    font-size: 2em;
-    align-items: center;
-}
-
-.lc-email-text {
-    margin-bottom: 6px;
-    margin-left: 10px;
-} */
-
 /* ====={ Universal Section Elements }===== */
 
 .main-section-container {
@@ -219,10 +191,11 @@ html::-webkit-scrollbar {
 
 .about-content {
     display: flex;
-    width: 90%;
+    flex-direction: column;
+    width: 80%;
     font-size: 1.5em;
     font-family: Oswald;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     color: rgb(103, 103, 103);
     letter-spacing: 1px;
@@ -512,6 +485,15 @@ html::-webkit-scrollbar {
 @media only screen and (max-width: 900px) {
     .footer-content {
         font-size: .7em;
+    }
+
+    .email-text {
+        margin-left: 5px;
+        margin-bottom: 6px;
+    }
+
+    .footer-email-icon img {
+        scale: .7;
     }
 
 }
