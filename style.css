@@ -10,7 +10,7 @@
 }
 
 html {
-    background-image: url("images/pexels-alexandra-karnasopoulos-3680319.jpg");
+    background-image: url("images/Landing/pexels-alexandra-karnasopoulos-3680319.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -30,6 +30,7 @@ html::-webkit-scrollbar {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .nav {
@@ -77,14 +78,50 @@ html::-webkit-scrollbar {
     border-radius: 10px;
 }
 
-#collapse {
+/* ====={ Checkbox }===== */
+
+.collapse {
     display: none;
+}
+
+.menuimg {
+    width: 50px;
+}
+
+#checkbox-toggle {
+    display: none;  
+}
+
+.dropdown { /* Hides dropdown list elements */
+    max-height: 0;
+    overflow: hidden;
+  }
+  
+  .dropdown a{ /* Formats the links (still hidden) */
+    font-family: Oswald;
+    text-decoration: none;
+    color: #333333;
+    font-size: 1.2em;
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    background-color: rgb(228, 228, 228);
+  }
+  
+  .dropdown a:hover { /* Format link on hover */
+    background-color: #c2c2c2;
+  }
+
+#checkbox-toggle:checked ~ nav ul { 
+    height: auto;
+    max-height: 20rem;
 }
 
 /* ====={ Landing photo section }===== */
 
 .photo-background {
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
@@ -103,6 +140,38 @@ html::-webkit-scrollbar {
     color: white;
     text-shadow: 4px 4px 2px rgba(255, 255, 255, 0.403);
 }
+
+/* .landing-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.landing-contact img {
+    width: 50px;
+}
+
+.landing-contact-icons {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.landing-contact-email {
+    display: flex;
+    color: white;
+    font-family: Oswald;
+    letter-spacing: 1px;
+    font-size: 2em;
+    align-items: center;
+}
+
+.lc-email-text {
+    margin-bottom: 6px;
+    margin-left: 10px;
+} */
 
 /* ====={ Universal Section Elements }===== */
 
@@ -372,7 +441,7 @@ html::-webkit-scrollbar {
     font-size: 1.3em;
     text-align: center;
     letter-spacing: 1px;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 .resume button {
@@ -385,7 +454,7 @@ html::-webkit-scrollbar {
     border-radius: 15px;
     border: none;
     color: white;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 .resume button:hover {
@@ -393,8 +462,59 @@ html::-webkit-scrollbar {
     cursor: pointer;
 }
 
+/* ====={ Footer }===== */
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    color: white;
+    font-family: Oswald;
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.878);
+    position: absolute;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.footer-name {
+    font-size: 1.2em;
+}
+
+.footer-email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-email-icon {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.footer-email-icon img{
+    width: 50px;
+}
+
+.email-text {
+    font-size: .7em;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
 
 /* ====={ Responsiveness }===== */
+
+@media only screen and (max-width: 900px) {
+    .footer-content {
+        font-size: .7em;
+    }
+
+}
 
 
 /* =={ iPhone }== */
@@ -445,7 +565,7 @@ html::-webkit-scrollbar {
     }
 
     .photo-background {
-        background-image: url("images/pexels-alexandra-karnasopoulos-3680319.jpg");
+        background-image: url("images/Landing/pexels-alexandra-karnasopoulos-3680319.jpg");
     }
 
     .photo-header {
@@ -460,7 +580,7 @@ html::-webkit-scrollbar {
         background: white;
     }
 
-    .nav-btn {
+    .nav-btn:nth-child(n + 2) {
         display: none;
     }
 
@@ -471,28 +591,89 @@ html::-webkit-scrollbar {
         align-items: center;
     }
 
-    #collapse {
-        display: block;
-    }
-
-    #collapse img {
-        width: 50px;
-    }
-
-    #collapse.nav-btn {
-        padding: 0;
-        margin: 10px;
-        width: 50px;
-    }
-
     .header-container {
-        z-index: 1;
+        display: none;
     }
 
     .contact-icon {
         scale: .75;
     }
 
+    .footer-container {
+        display: none;
+    }
+
+    /* ========={ Dropdown Styling }========= */
+
+    .secondary-header {
+        background-color: rgba(0, 0, 0, 0.855);
+        width: 80px;
+        height: 80px;
+        border-radius: 0 0 15px 0;
+        display: flex;
+        margin: 0;
+        position: fixed;
+        z-index: 2;
+    }
+
+    .collapse {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menuimg {
+      width: 80px;
+      padding: 10px;
+      margin-left: -1px;
+    }
+
+    .menuimg:hover {
+        background-color: rgba(255, 255, 255, 0.238);
+        border-radius: 0 0 15px 0;
+    }
+    
+    #checkbox-toggle {
+        display: none;  
+    }
+    
+    .dropdown { /* Hides dropdown list elements */
+        max-height: 0;
+        overflow: hidden;
+        border-radius: 0 10px 10px 10px;
+        margin-top: -4px;
+        border: none;
+    }
+      
+    .dropdown a{ /* Formats the links (still hidden) */
+        font-family: Oswald;
+        text-decoration: none;
+        color: #333333;
+        font-size: 2em;
+        font-weight: bold;
+        display: flex;
+        width: 300px;
+        height: 50px;
+        justify-content: center;
+        background-color: rgb(228, 228, 228);
+        border-bottom: 1px solid #333333;
+    }
+      
+    .dropdown a:hover { /* Format link on hover */
+        background-color: #c2c2c2;
+    }
+
+    #contact-dropdown-li {
+        border: none;
+    }
+
+    #checkbox-toggle:checked ~ .dropdown li { 
+        height: auto;
+    }
+
+    #checkbox-toggle:checked ~ nav ul{
+        border: 1px solid #333333;
+    }
+    
 }
 
 @media only screen and (max-width: 500px) {
@@ -560,32 +741,81 @@ html::-webkit-scrollbar {
         font-size: .6em;
     }
 
-    .header-container {
+    .secondary-header {
+        background-color: rgba(0, 0, 0, 0.855);
+        width: 80px;
+        height: 80px;
+        border-radius: 0 0 15px 0;
         display: flex;
+        margin: 0;
         position: fixed;
-        height: 70px;
-        width: 70px;
-        border-radius: 0 0 20px 0;
-
+        z-index: 2;
     }
 
-    .nav-btn {
-        display: none;
-    }
-
-    #collapse {
+    .collapse {
         display: flex;
-        height: 100%;
-        align-items: center;
-        border-radius: 20px;
+        flex-direction: column;
     }
 
-    #collapse img {
-        width: 50px;
+    .menuimg {
+      width: 80px;
+      padding: 10px;
+      margin-left: -1px;
+    }
+
+    .menuimg:hover {
+        background-color: rgba(255, 255, 255, 0.238);
+        border-radius: 0 0 15px 0;
+    }
+    
+    #checkbox-toggle {
+        display: none;  
+    }
+    
+    .dropdown { /* Hides dropdown list elements */
+        max-height: 0;
+        overflow: hidden;
+        border-radius: 0 10px 10px 10px;
+        margin-top: -4px;
+        border: none;
+    }
+      
+    .dropdown a{ /* Formats the links (still hidden) */
+        font-family: Oswald;
+        text-decoration: none;
+        color: #333333;
+        font-size: 2em;
+        font-weight: bold;
+        display: flex;
+        width: 300px;
+        height: 50px;
+        justify-content: center;
+        background-color: rgb(228, 228, 228);
+        border-bottom: 1px solid #333333;
+    }
+      
+    .dropdown a:hover { /* Format link on hover */
+        background-color: #c2c2c2;
+    }
+
+    #contact-dropdown-li {
+        border: none;
+    }
+
+    #checkbox-toggle:checked ~ .dropdown li { 
+        height: auto;
+    }
+
+    #checkbox-toggle:checked ~ nav ul{
+        border: 1px solid #333333;
     }
 
     .about-content {
         width: 80%;
+    }
+
+    .header-container {
+        display: none;
     }
 }
 
@@ -593,6 +823,10 @@ html::-webkit-scrollbar {
 
 @media only screen and (max-height: 380px) {
     .skill {
+        scale: .8;
+    }
+
+    .project-image {
         scale: .8;
     }
 }

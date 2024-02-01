@@ -13,8 +13,6 @@
     <header class="header-container">
       <div class="nav">
         <ul class="nav-container">
-          <div class="nav-btn" id="collapse"><img src="images/menu.png" /></div>
-
           <!-- ========={ Navigation Buttons }========= -->
 
           <div class="nav-btn">
@@ -60,6 +58,25 @@
       </div>
     </header>
 
+    <!-- ========={ Dropdown Menu }========= -->
+
+    <div class="secondary-header">
+      <div class="dropdown-btn">
+        <input type="checkbox" id="checkbox-toggle" />
+        <label for="checkbox-toggle">
+          <img src="images/Landing/menu.png" class="menuimg"
+        /></label>
+        <nav>
+          <ul class="dropdown">
+            <li><a href="#aboutjump">About</a></li>
+            <li><a href="#skilljump">Skills</a></li>
+            <li><a href="#projectjump">Projects</a></li>
+            <li id="contact-dropdown-li"><a href="#contactjump">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
     <!-- ========={ Landing Page }========= -->
 
     <div class="photo-background">
@@ -67,6 +84,16 @@
         <h1 class="photo-header">JOSHUA MOONEYHAM</h1>
         <p class="photo-subheader">SOFTWARE DEVELOPER</p>
       </div>
+      <!-- <div class="landing-contact">
+        <div class="landing-contact-icons">
+          <img src="images/Landing/github white.png" />
+          <img src="images/Landing/linked-in-white.png" />
+        </div>
+        <div class="landing-contact-email">
+          <img src="images/Landing/email-icon-white.png" />
+          <div class="lc-email-text">jmooneyham58@gmail.com</div>
+        </div>
+      </div> -->
     </div>
 
     <!-- ========={ About Me Section }========= -->
@@ -76,13 +103,14 @@
 
       <div class="about-content">
         <p>
-          My name is Joshua Mooneyham. I am an aspiring backend developer and
-          Current apprentice at the
+          Hello, my name is Joshua Mooneyham! I am currently an apprentice at
+          the
           <a href="https://basecampcodingacademy.org/" target="_blank"
             >Base Camp Coding Academy Graduate Institute</a
           >
-          (BCCA GI), where I am learning all the skills I need to start a career
-          in software development.
+          (BCCA GI), where I am learning all of the technical and professional
+          skills I need to start a career in software development. Upon
+          completion of this program I aim to focus on backend development
         </p>
       </div>
     </div>
@@ -93,13 +121,13 @@
       <div class="general-container">
         <div class="section-header"><h1>Skills</h1></div>
 
-        <div class="section-header sub-header skl">
+        <!-- <div class="section-header sub-header skl">
           <h2>
             These are the skills I am learning during my time at the BCCA GI
           </h2>
 
           <div class="underline"></div>
-        </div>
+        </div> -->
       </div>
 
       <div class="skill-content">
@@ -507,6 +535,20 @@
       <a href="Resume.pdf" target="_blank"
         ><button type="button">View my Resume!</button></a
       >
+    </div>
+
+    <!-- ========={ Footer }========= -->
+
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-name">Joshua Mooneyham</div>
+        <div class="footer-email">
+          <div class="footer-email-icon">
+            <img src="images/Landing/email-icon-white.png" />
+          </div>
+          <div class="email-text">jmooneyham58@gmail.com</div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
