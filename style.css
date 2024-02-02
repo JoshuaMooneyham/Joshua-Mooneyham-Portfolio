@@ -163,29 +163,19 @@ html::-webkit-scrollbar {
     font-family: Oswald;
     font-weight: bolder;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
     margin: 2em 0;
     color: rgb(206, 6, 6);
     letter-spacing: 2px;
+    width: 90%;
+    text-align: left;
 }
 
-.underline {
-    display: flex;
-    height: 2px;
-    background-color: rgb(189, 189, 189);
-    width: 75%;
-    justify-self: center;
-    border-radius: 5px;
-    margin: 3em auto;
-    
-}
+/* .section-header h1{
+    width: fit-content;
+    border-bottom: 4px solid rgb(70, 70, 70);
+} */
 
- .sub-header{
-    margin-top: -.5em;
-    margin-bottom: 1.5em;
-    font-size: 1.3em;
-    color: rgb(103, 103, 103);
- }
 
 /* ====={ About Me }===== */
 
@@ -199,6 +189,11 @@ html::-webkit-scrollbar {
     font-weight: bold;
     color: rgb(103, 103, 103);
     letter-spacing: 1px;
+}
+
+.about-content a {
+    text-decoration: none;
+    color: rgb(236, 132, 9);
 }
 
 /* ====={ Skills }===== */
