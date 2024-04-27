@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+*:hover { 
+    transition: 0.3s;
+}
+
 html {
     background-image: url("images/Landing/pexels-alexandra-karnasopoulos-3680319.jpg");
     background-size: cover;
@@ -196,6 +200,13 @@ html::-webkit-scrollbar {
     color: rgb(236, 132, 9);
 }
 
+.about-content a:hover {
+    color: orange;
+    transition: 0.3s;
+    /* color: rgb(236, 132, 9); */
+}
+
+
 /* ====={ Skills }===== */
 
 .skills-container {
@@ -290,6 +301,29 @@ html::-webkit-scrollbar {
 
 .tools-container {
     width: 39%;
+}
+
+/* ====={ Certifications }===== */
+.cert-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.certificate {
+    width: 400px;
+}
+
+.certificate:hover {
+    opacity: 70%;
+}
+
+.cert-name {
+    margin-top: 20px;
+    font-family: Oswald;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #676767;
 }
 
 /* ====={ Projects }===== */

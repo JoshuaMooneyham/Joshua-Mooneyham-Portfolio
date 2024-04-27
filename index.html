@@ -33,6 +33,14 @@
 
           <div class="nav-btn">
             <li>
+              <a href="#certjump"
+                ><button type="button" class="btn">Certifications</button></a
+              >
+            </li>
+          </div>
+
+          <div class="nav-btn">
+            <li>
               <a href="#projectjump"
                 ><button type="button" class="btn">Projects</button></a
               >
@@ -70,6 +78,7 @@
           <ul class="dropdown">
             <li><a href="#aboutjump">About</a></li>
             <li><a href="#skilljump">Skills</a></li>
+            <li><a href="#certjump">Certifications</a></li>
             <li><a href="#projectjump">Projects</a></li>
             <li id="contact-dropdown-li"><a href="#contactjump">Contact</a></li>
           </ul>
@@ -93,9 +102,12 @@
 
       <div class="about-content">
         <p>
-          Hello, my name is Joshua Mooneyham! I am an upcoming software
-          developer from Pontotoc, MS. I am currently an apprentice at the
-          <a href="https://basecampcodingacademy.org/" target="_blank"
+          Hello, my name is Joshua Mooneyham and I am an upcoming software
+          developer from Pontotoc, MS. Currently I am an apprentice at the
+          <a
+            href="https://basecampcodingacademy.org/"
+            id="bccalink"
+            target="_blank"
             >Base Camp Coding Academy Graduate Institute</a
           >
           (BCCA GI), where I am learning all of the technical and professional
@@ -319,6 +331,24 @@
       </div>
     </div>
 
+    <!-- ========={ Certifications }========= -->
+
+    <div class="cert-container main-section-container" id="certjump">
+      <div class="section-header"><h1>Certificates and Badges</h1></div>
+
+      <div class="cert-content">
+        <div class="cert-card">
+          <a
+            href="https://www.credly.com/badges/893ac0de-9e31-4e71-9b34-f122d1e02576/public_url"
+            ><img
+              src="images/Certifications/PCEP Certificate.png"
+              class="certificate"
+          /></a>
+          <p class="cert-name">PCEP-30-02</p>
+        </div>
+      </div>
+    </div>
+
     <!-- ========={ Projects Section }========= -->
 
     <div class="projects-container main-section-container" id="projectjump">
@@ -478,6 +508,45 @@
               </a>
               <a
                 href="https://joshuamooneyham.github.io/PantsforAll/"
+                target="_blank"
+              >
+                <button type="button" class="project-button">View</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- =={ HotKeys }== -->
+
+        <div class="project-card">
+          <div class="project-card-content">
+            <div class="project-image">
+              <img src="images/Projects/flash-sale.png" />
+            </div>
+
+            <div class="project-text">
+              <div class="project-title">HotKeys WebShop</div>
+
+              <div class="project-description">
+                A mockup of an online store, featuring a landing page, cart,
+                storefront, user management and API integration.
+              </div>
+              <div class="project-language">
+                Demonstrates React, JavaScript, and CSS
+              </div>
+            </div>
+
+            <div class="project-buttons">
+              <a
+                href="https://github.com/JoshuaMooneyham/HotKeys-WebShop"
+                target="_blank"
+              >
+                <button type="button" class="project-button">
+                  <img src="images/Projects/github white.png" />
+                </button>
+              </a>
+              <a
+                href="https://joshuamooneyham.github.io/HotKeys-WebShop/"
                 target="_blank"
               >
                 <button type="button" class="project-button">View</button></a
