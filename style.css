@@ -149,6 +149,25 @@ html::-webkit-scrollbar {
     text-shadow: 4px 4px 2px rgba(255, 255, 255, 0.403);
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.photo-header {
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.photo-subheader {
+    animation: fadeIn 2.5s ease-in-out forwards;
+}
+
 /* ====={ Universal Section Elements }===== */
 
 .main-section-container {
